@@ -1,6 +1,5 @@
 function calculate(){
     let dateBirth = document.getElementById('dateBirth').value;
-
     let birthDate = new Date(dateBirth)
     let currentDate = new Date()
 
