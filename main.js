@@ -4,13 +4,17 @@ function calculate(){
     const birthDate = new Date(dateBirth)
     const currentDate = new Date()
 
-    let age = currentDate.getFullYear() - birthDate.getFullYear()
+    const currentDateYear = currentDate.getFullYear();
+    const currentDateMonth = currentDate.getMonth() + 1;
+    const currentDateDay = currentDate.getDate();
 
-    if(currentDate.getMonth()<birthDate.getMonth()){
+    let age = currentDateYear - birthDate.getFullYear()
+
+    if(currentDateMonth < birthDate.getMonth()){
         age--
     }
     else{
-        if(currentDate.getDay() <= birthDate.getDay()){
+        if(currentDateDay <= birthDate.getDate()){
             age--
         }
     }
