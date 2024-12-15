@@ -1,5 +1,6 @@
 function calculate(){
     let dateBirth = document.getElementById('dateBirth').value;
+
     let birthDate = new Date(dateBirth)
     let currentDate = new Date()
 
@@ -9,21 +10,13 @@ function calculate(){
 
     let birthDateYear = birthDate.getFullYear()
     let birthDateMonth = birthDate.getMonth() + 1
-    let birthDateDay = birthDate.getDate() + 1
+    let birthDateDay = birthDate.getDate()
 
     let age = currentDateYear - birthDateYear
+    const monthDifference = currentDateMonth - birthDateMonth
 
-    if(currentDateYear < birthDateYear){
-        if(currentDateMonth < birthDateMonth){
-            if(currentDateDay <= birthDateDay){
-                age = currentDateYear - birthDateYear
-            }
-            else
-                age = currentDateYear - birthDateYear - 1
-        }
-        else
-            age = currentDateYear - birthDateYear - 1
+    if (monthDifference < 0 || (monthDifference === 0 && currentDateDay <= birthDateDay)) {
+        age--
     }
-
-    output.value = "You are " + age + " years old."
+    output.value = "You are "  + age + " years old."
 }
