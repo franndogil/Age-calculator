@@ -4,7 +4,7 @@ Una simple pero elegante **calculadora de edad** desarrollada con **HTML**, **CS
 
 ## 🚀 Características
 
-- Diseño responsive y moderno
+- Diseño responsive
 - Validación de datos del usuario
 - Cálculo preciso de edad en años, meses y días
 - Interfaz intuitiva y accesible
