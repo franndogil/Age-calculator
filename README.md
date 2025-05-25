@@ -15,6 +15,9 @@ Una simple pero elegante **calculadora de edad** desarrollada con **HTML**, **CS
 - **CSS3** – estilos y diseño visual
 - **JavaScript** – lógica del cálculo y validaciones
 
+## 📸 Captura de pantalla
+![Captura](screenshot.png)
+
 ## 🔧 Cómo usarla
 
 Podés probar la app directamente en tu navegador:
